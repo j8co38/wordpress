@@ -1,0 +1,7 @@
+languages/
+plugins/
+theme/
+upgrade/
+uploads/
+*/.DS_Store
+themes_dev/node_modules/

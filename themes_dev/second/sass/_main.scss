@@ -1,0 +1,92 @@
+.post-list {
+	font-size: 0;
+	.post {
+		display: inline-block;
+		width: 44%;
+		margin: 1% 2% 1% 3%;
+		font-size: 13px;
+		vertical-align: top;
+		@include media(tablet) {
+			margin: 1% 3%;
+		}
+		@include media(sp) {
+			width: 96%;
+			margin: 0 2% 20px 2%;
+		}
+	}
+	.main-thumb {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+#contents {
+	margin: 15px 0 0;
+	.main-thumb {
+		width: 100%;
+		height: auto;
+		margin: 10px 0 5px 0;
+	}
+	.post-text {
+		color: #808080;
+		font-size: 12px;
+	}
+	.post-inner {
+		.date {
+			display: block;
+			color: #cccccc;
+			font-size: 13px;
+			text-align: right;
+		}
+		h2 {
+			font-size: 18px;
+			font-weight: bold;
+			a {
+				color: #111;
+				&:hover {
+					@include hover($yellow);
+				}
+			}
+		}
+	}
+	.label {
+		margin: 0 4px 0 0;
+		padding: 3px 10px 4px 10px;
+		border-radius: 4px;
+		font-size: 12px;
+	}
+	.label-memo {
+		@include label($red);
+	}
+	.label-web {
+		@include label($yellow);
+	}
+	.label-illustrator {
+		@include label(#fb7a00);
+	}
+	.label-photoshop {
+		@include label($blue);
+	}
+	.label-line-stamp {
+		@include label(#43c458);
+	}
+	.label-wordpress {
+		@include label(#209fd6);
+	}
+	.pagination {
+		clear: both;
+		padding: 40px 0;
+		text-align: center;
+		font-size: 13px;
+		.page-numbers {
+			padding: 6px 12px;
+			color: #fff;
+			background: #808080;
+		}
+		.current {
+			background: $yellow;
+		}
+	}
+}

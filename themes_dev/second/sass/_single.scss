@@ -1,0 +1,181 @@
+.single-post-inner {
+	width: 90%;
+	@include media(sp) {
+		width: 94%;
+		margin: 1% 3%;
+	}
+	margin: 1% 4%;
+	color: #323232;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	a {
+		color: $yellow;
+		&:hover {
+			opacity: 0.7;
+		}
+		img:hover {
+			opacity: 1;
+		}
+	}
+	.postinfo {
+		font-size: 14px;
+		color: #ccc;
+		a {
+			color: #ccc;
+		}
+		.post-category {
+			padding: 0 0 0 10px;
+			.fa-folder {
+				margin: 0 4px 0 0;
+				color: #808080;
+				&:before {
+					content: "\f07b";
+				}
+			}
+		}
+	}
+	.post-content {
+		line-height: 1.6;
+		a {
+			color: $blue;
+			text-decoration: underline;
+		}
+	}
+	.bottom_ad {
+		border-collapse: separate;
+		border-spacing: 10px;
+	}
+	h2 {
+		margin: 10px 0;
+		font-size: 34px;
+		font-weight: bold;
+		a {
+			color: #111;
+		}
+	}
+	h3 {
+		margin: 10px 0;
+		padding: 0 0 7px 0;
+		font-size: 28px;
+		font-weight: bold;
+		border-bottom: 2px solid $yellow;
+	}
+	h4 {
+		margin: 5px 0;
+		padding: 3px 0 3px 10px;
+		color: #808080;
+		font-weight: bold;
+		border-left: 5px solid $yellow;
+	}
+	em {
+		font-weight: bold;
+	}
+	strong, .bg {
+		padding: 2px;
+		background: url('./images/common/moji-bg.png');
+	}
+	blockquote{
+		background-color:#eee;
+		padding:1.5em;
+		margin: 10px 0;
+		position:relative;
+		z-index:1;
+		&:before {
+			content:"“";
+			font-size:600%;
+			line-height:1em;
+			color:#fff;
+			position:absolute;
+			left:0;
+			top:0;
+			z-index:-1;
+		}
+	}
+	kbd {
+		display: inline-block;
+		height: 30px;
+		min-width: 12px;
+		padding: 0px 10px;
+		margin: 5px 3px;
+		background: #ffffff;
+		border-radius: 3px;
+		border-top: 1px solid #F5F5F5;
+		box-shadow: 0 0 25px #F2F1F1 inset, 0 1px 0 #F2F1F1, 0 2px 0 #F2F1F1, 0 2px 1px #333333;
+		color: #302E2E;
+		font: 14px arial;
+		text-align: center;
+		line-height: 30px;
+	}
+	ol {
+		counter-reset: li;
+		padding: 15px;
+		border: 1px solid #ddd;
+		li {
+			position:relative;
+			display: block;
+			padding:10px 0px 10px 30px;
+			margin-left:0px !important;
+			&:after {
+				counter-increment: li;
+				content: counter(li) ".";
+				position: absolute;
+				display: block;
+				text-align: center;
+				font-style: italic;
+				left: 0px;
+				top: -1px;
+				font-size: 30px;
+				color:#bbb;
+			}
+		}
+	}
+	.post-tag a {
+		display: inline-block;
+		line-height: 1.7em;
+		padding: 2px 4px;
+		margin: 12px 0 0 0;
+		background: #ccc;
+		color: #fff;
+		border-radius: 3px;
+		font-size: 12px;
+	}
+	.pagenav {
+		margin: 20px 0;
+		padding: 12px 0;
+		font-size: 14px;
+		border-top: 1px #eee solid;
+		border-bottom: 1px #eee solid;
+		a {
+			color: #808080;
+			&:hover {
+				@include hover($yellow);
+			}
+		}
+		.old {
+			line-height: 1.3;
+			float: left;
+		}
+		.new {
+			line-height: 1.3;
+			float: right;
+		}
+	}
+	.related-post {
+		padding: 16px 0;
+		ul {
+			margin: 8px 0 0;
+		}
+		li {
+			margin: 3px 0 0;
+			a {
+				color: #808080;
+				text-decoration: underline;
+				&:hover {
+					@include hover($yellow);
+				}
+			}
+		}
+	}
+}
