@@ -3,7 +3,6 @@ var gulp = require("gulp"),
     sass = require("gulp-sass"),
     autoprefixer = require("gulp-autoprefixer"),
     uglify = require("gulp-uglify"), //js min
-    connect = require('gulp-connect-php'),
     plumber = require("gulp-plumber"), //エラーハンドリング
     imagemin = require("gulp-imagemin");
 
@@ -38,10 +37,6 @@ gulp.task("watchTask", function() {
     });
 });
 
-gulp.task('reload', function(){
-    browser.reload({stream:true});
-});
-
 gulp.task("watch", function() {
     gulp.watch([dir.dev+"js/**/*.js","!"+dir.dev+"js/min/**/*.js"],["js"]);
     gulp.watch(dir.dev+"sass/**/*.scss",["sass"]);
@@ -59,4 +54,4 @@ gulp.task('copy', function() {
 });
 
 //default
-gulp.task('default',['copy','watch','sass','watchTask','reload']);
+gulp.task('default',['copy','watch','sass','watchTask']);

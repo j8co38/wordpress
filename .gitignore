@@ -1,7 +1,7 @@
 languages/
 plugins/
-theme/
+themes/
 upgrade/
 uploads/
 */.DS_Store
-themes_dev/node_modules/
+node_modules/
