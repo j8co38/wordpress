@@ -5,6 +5,7 @@
 			<input type="text" value="" name="s" id="s" />
 			<input type="submit" id="searchsubmit" value="&#xf002;" />
 		</form>
+		<script>document.write('<p>広告<p>');</script>
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- side -->
 		<ins class="adsbygoogle"
