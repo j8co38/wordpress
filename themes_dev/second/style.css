@@ -345,7 +345,10 @@ footer {
     .single-post-inner .post-content a {
       color: #0057c4;
       text-decoration: underline; }
-  .single-post-inner .bottom_ad {
+  .single-post-inner .ad-tit {
+    font-size: 12px;
+    margin: 0 0 0 20px; }
+  .single-post-inner .bottom-ad {
     border-collapse: separate;
     border-spacing: 10px; }
   .single-post-inner h2 {
