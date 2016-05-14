@@ -299,6 +299,11 @@ footer {
     color: #209fd6; }
     #contents .label-wordpress a {
       color: #209fd6; }
+  #contents .label-sketch {
+    border: 1px solid #f7c43b;
+    color: #f7c43b; }
+    #contents .label-sketch a {
+      color: #f7c43b; }
   #contents .pagination {
     clear: both;
     padding: 40px 0;
@@ -341,6 +346,7 @@ footer {
         .single-post-inner .postinfo .post-category .fa-folder:before {
           content: "\f07b"; }
   .single-post-inner .post-content {
+    padding: 0 0 40px 0;
     line-height: 1.9; }
     .single-post-inner .post-content a {
       color: #0057c4;
