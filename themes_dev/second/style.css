@@ -304,6 +304,11 @@ footer {
     color: #f7c43b; }
     #contents .label-sketch a {
       color: #f7c43b; }
+  #contents .label-app {
+    border: 1px solid #2ba1dc;
+    color: #2ba1dc; }
+    #contents .label-app a {
+      color: #2ba1dc; }
   #contents .pagination {
     clear: both;
     padding: 40px 0;
@@ -364,8 +369,8 @@ footer {
     .single-post-inner h2 a {
       color: #111; }
   .single-post-inner h3 {
-    margin: 10px 0;
-    padding: 0 0 7px 0;
+    margin: 10px 0 30px 0;
+    padding: 0 0 4px 0;
     font-size: 28px;
     font-weight: bold;
     border-bottom: 2px solid #FAD200; }

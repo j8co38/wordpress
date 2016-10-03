@@ -20,7 +20,7 @@
 		<article id="profile" class="sidebar-wrapper">
 			<h4 class="sidebar-title">Author</h4>
 			<img class="me" src="<?php echo get_template_directory_uri(); ?>/images/side/me.png" alt="me">
-			<p>ハマダユイコ (21)<br>
+			<p>ハマダユイコ (22)<br>
 					WEB系の勉強をしている大学生<br>
 					自分用のメモだったり、学んだことだったりを記事にします。<br>
 					<a href="http://united.nagoya">UNITED</a>のいちメンバーとしても活動中。<br>
@@ -41,7 +41,7 @@
 <div id="sp-profile" class="side-content">
 	<h4 class="sidebar-title">Author</h4>
 	<img class="me" src="<?php echo get_template_directory_uri(); ?>/images/side/me.png" alt="me">
-	<p>ハマダユイコ (21)<br>
+	<p>ハマダユイコ (22)<br>
 			WEB系の勉強をしている大学生<br>
 			自分用のメモだったり、学んだことだったりを記事にします。<br>
 			<a href="http://united.nagoya">UNITED</a>のいちメンバーとしても活動中。<br>

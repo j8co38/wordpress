@@ -78,6 +78,9 @@
 	.label-sketch {
 		@include label(#f7c43b);
 	}
+	.label-app {
+		@include label(#2ba1dc);
+	}
 	.pagination {
 		clear: both;
 		padding: 40px 0;

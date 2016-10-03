@@ -7,8 +7,8 @@ var gulp = require("gulp"),
     imagemin = require("gulp-imagemin");
 
 var dir = {
-    dev: './themes_dev/', //themeの名前を足して使う
-    pub: './themes/'
+    dev: './themes_dev/second/', //themeの名前を足して使う
+    pub: './themes/second/'
 }
 
 gulp.task("sass", function() { //タスクの登録
@@ -47,7 +47,7 @@ gulp.task("watch", function() {
 //コピー
 gulp.task('copy', function() {
     gulp.src(
-        [dir.dev+"*.html",dir.dev+"*.php",dir.dev+"**/*.css"],
+        [dir.dev+"**/*.html",dir.dev+"**/*.php",dir.dev+"**/*.css"],
         {base: dir.dev}
     ) // コピー元ディレクトリの指定
         .pipe(gulp.dest(dir.pub)); // コピー先ディレクトリの指定
