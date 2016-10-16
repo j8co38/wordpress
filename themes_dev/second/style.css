@@ -332,6 +332,8 @@ footer {
   .single-post-inner img {
     max-width: 100%;
     height: auto; }
+  .single-post-inner .aligncenter {
+    text-align: center; }
   .single-post-inner a {
     color: #FAD200; }
     .single-post-inner a:hover {
