@@ -187,3 +187,48 @@
 		}
 	}
 }
+
+//SNS
+
+#share {
+	ul {
+		height: auto;
+		margin: 40px 0 0;
+		li {
+			float: left;
+			font-size: 13px;
+			text-align: center;
+			width: 110px;
+			margin-right: 1%;
+			margin-bottom: 8px;
+			border-radius: 3px;
+			&.share-twitter {
+				background:#55acee;
+				box-shadow:0 2px #2795e9;
+			}
+			&.share-facebook {
+				background:#3b5998;
+				box-shadow:0 2px #2d4373;
+			}
+			&.share-google {
+				background:#dd4b39;
+				box-shadow:0 2px #c23321;
+			}
+			&.share-hatena {
+				background:#2c6ebd;
+				box-shadow:0 2px #225694;
+			}
+			&.share-pocket {
+				background:#f13d53;
+				box-shadow:0 2px #e6152f;
+			}
+		}
+	}
+	a {
+		display:block;
+		height:27px;
+		padding-top:6px;
+		color:#ffffff;
+		text-decoration:none;
+	}
+}

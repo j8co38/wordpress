@@ -12,6 +12,30 @@
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<div class="post-content">
 					<?php the_content(); ?>
+					<div id="share">
+						<ul class="clearfix">
+							<!-- Twitter -->
+							<li class="share-twitter">
+							<a href="http://twitter.com/home?status=<?php echo urlencode(the_title_attribute('echo=0')); ?>%20<?php the_permalink(); ?>%20by%20" target="_blank">Twitter</a>
+							</li>
+							<!-- Facebook -->
+							<li class="share-facebook">
+							<a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank">Facebook</a>
+							</li>
+							<!-- Google+ -->
+							<li class="share-google">
+							<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" target="_blank">Google+</a>
+							</li>
+							<!-- はてなブックマーク -->
+							<li class="share-hatena">
+							<a href="http://b.hatena.ne.jp/add?mode=confirm&url=<?php the_permalink(); ?>&title=<?php the_title();?>" target="_blank">はてブ</a>
+							</li>
+							<!-- Pocket -->
+							<li class="share-pocket">
+							<a href="http://getpocket.com/edit?url=<?php the_permalink(); ?>" target="_blank">Pocket</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<script>document.write('<p class="ad-tit">広告<p>');</script>
 				<?php if (wp_is_mobile()) :?>
